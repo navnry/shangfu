@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "hyg3gj";
+    src: url("hyg3gj.eot"); /* IE9 */
+    src: url("hyg3gj.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("hyg3gj.woff") format("woff"), /* chrome、firefox */
+    url("hyg3gj.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("hyg3gj.svg#hyg3gj") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
