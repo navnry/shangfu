@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport"-->
+    <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/guodu.css">
+    <title>上扶教育-过渡页</title>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv.js"></script>
+    <script src="libs/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div style="width: 100%;">
+        <div class="logo">
+            <div class="pic"></div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: url(images/guodu/0_06.jpg) center/cover no-repeat">
+                    <div>
+                        <p>这是简介</p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(images/guodu/0_07.jpg) center/cover no-repeat">
+                    <div>
+                        <p>这是简介</p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(images/guodu/0_08.jpg) center/cover no-repeat">
+                    <div>
+                        <p>这是简介</p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(images/guodu/0_09.jpg) center/cover no-repeat">
+                    <div>
+                        <p>这是简介</p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(images/guodu/0_10.jpg) center/cover no-repeat">
+                    <div>
+                        <p>这是简介</p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(images/guodu/0_07.jpg) center/cover no-repeat">
+                    <div>
+                        <p>这是简介</p>
+                        <a href="">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="on"><a href="">课程资源中心</a></li>
+                <li><a href="">社区发展中心</a></li>
+                <li><a href="">实践创新中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>上扶(长沙)教育咨询有限公司 地址：湖南省长沙市开福区军民融合产业园3栋4层 咨询热线： 199 7695 9797</p>
+    </div>
+</div>
+</body>
+</html>
+<script src="libs/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper(".swiper-container", {
+        speed: 800,
+        slidesPerView: 5,
+        loop: true,
+        autoplay: {
+            delay: 1000
+        }
+    });
+    mySwiper.el.onmouseover = function () {
+        mySwiper.autoplay.stop();
+    };
+    mySwiper.el.onmouseleave = function () {
+        mySwiper.autoplay.start()
+    }
+</script>
+

@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    min-width: 1200px;
+}
+
 @font-face {
     font-family: "hyg3gj";
     src: url("../font/hyg3gj/hyg3gj.eot"); /* IE9 */
@@ -26,6 +30,14 @@ ul:after {
 .main {
     width: 1200px;
     margin: 0 auto;
+}
+
+.main:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
 }
 
 .nav_head {
@@ -61,13 +73,23 @@ ul:after {
     padding-top: 43px;
 }
 
+.nav_head .tel > div {
+    height: 32px;
+    vertical-align: middle;
+    font-size: 32px;
+    padding-top: 6px;
+}
+
+.nav_head .tel img {
+    width: 32px;
+    height: 32px;
+}
+
 .nav_head .tel span {
-    display: inline-block;
     font-size: 24px;
-    line-height: 24px;
     color: #332c2b;
     font-weight: bold;
-    padding-top: 20px;
+    padding-left: 15px;
 }
 
 .nav {
@@ -100,14 +122,7 @@ ul:after {
     background: #005c84;
 }
 
-.nav .main > ul > li:hover .has_menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0);
-    transition: all .3s;
-}
-
-.nav .has_menu {
+.nav .submenu {
     position: absolute;
     width: 100%;
     top: 55px;
@@ -117,21 +132,149 @@ ul:after {
     visibility: hidden;
     transform: translate(0, -5px);
     transition: all .3s;
+    z-index: 9;
 }
 
-.nav .has_menu ul li {
+.nav .main > ul > li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+    transition: all .3s;
+}
+
+
+.nav .submenu ul li {
     text-align: center;
     height: 40px;
 }
 
-.nav .has_menu ul li:hover {
+.nav .submenu ul li:hover {
     background: #00a2e9;
     transition: all .3s;
 }
 
-.nav .has_menu ul li a {
+.nav .submenu ul li a {
     display: block;
     font-size: 16px;
     line-height: 40px;
     transition: all .3s;
+}
+
+/**/
+/**/
+/**/
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #2d2d2d;
+    padding: 41px 0 38px 0;
+}
+
+.footer .logo {
+    height: 121px;
+    padding-top: 21px;
+    padding-right: 51px;
+    border-right: 1px solid #3b3b3b;
+    display: inline-block;
+    float: left;
+}
+
+.footer .logo .pic {
+    width: 238px;
+    height: 57px;
+}
+
+.footer .logo p {
+    font-size: 22px;
+    line-height: 24px;
+    color: #009b4c;
+    font-family: hyg3gj, sans-serif;
+}
+
+.footer .link {
+    height: 121px;
+    float: left;
+    padding: 0 46px;
+    border-left: 1px solid #262626;
+    border-right: 1px solid #3b3b3b;
+}
+
+.footer .link a {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 27px;
+}
+
+.footer .link ul {
+    width: 135px;
+}
+
+.footer .link ul li {
+    float: left;
+    width: 50%;
+}
+
+/*.footer .link ul li:nth-child(1){*/
+/*border-right: 2px solid #666666;*/
+/*}*/
+.footer .link ul li a {
+    font-size: 14px;
+    color: #666666;
+    line-height: 17px;
+}
+
+.footer .weixin {
+    height: 121px;
+    float: left;
+    padding: 0 40px;
+    border-left: 1px solid #262626;
+    border-right: 1px solid #3b3b3b;
+}
+
+.footer .weixin .pic:first-child {
+    margin-left: 0;
+}
+
+.footer .weixin .pic {
+    width: 98px;
+    height: 98px;
+    float: left;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.footer .weixin .pic p {
+    font-size: 12px;
+    color: #999999;
+    padding-top: 10px;
+}
+
+.footer .tel {
+    float: left;
+    padding-left: 45px;
+    border-left: 1px solid #262626;
+}
+
+.footer .tel span {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+}
+
+.footer .tel a {
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    padding: 18px 0;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.footer .tel p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 14px;
+    padding-top: 15px;
+    border-top: 1px solid #262626;
 }
